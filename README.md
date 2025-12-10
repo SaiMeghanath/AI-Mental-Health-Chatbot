@@ -19,6 +19,22 @@ It can understand user emotions, classify sentiment, and respond with supportive
 - Publicly available emotion/sentiment datasets from [Kaggle](https://www.kaggle.com/) and [Hugging Face](https://huggingface.co/datasets).
 
 ## 🚀 How to Run
+
 ```bash
 pip install -r requirements.txt
 python app.py
+```
+## 🧠 Architecture
+
+```mermaid
+flowchart TD
+  A[User Input] --> B[Web UI]
+  B --> C[Preprocessing]
+  C --> D[Embeddings]
+  D --> E[Emotion Model]
+  D --> F[Sentiment Model]
+  E --> G[Response Generator]
+  F --> G
+  G --> H[Supportive Reply]
+```
+
