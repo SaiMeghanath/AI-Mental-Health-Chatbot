@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.env
+data/conversation_logs.txt
+data/evaluation_results.json
+models/
+*.pt
+*.bin
+.DS_Store
