@@ -113,6 +113,8 @@ The Mental Health Support Chatbot was evaluated using benchmark datasets for emo
 | Macro F1-Score | 49.58% |
 | Samples Evaluated | 600 |
 
+---
+
 ### Evaluation Components
 
 ✅ Emotion Classification (Anger, Disgust, Fear, Joy, Neutral, Sadness, Surprise)
@@ -143,9 +145,11 @@ The Mental Health Support Chatbot was evaluated using benchmark datasets for emo
 
 ---
 
-## Live Demo
+## 🚀 Live Demo
 
-🔗 [HuggingFace Spaces — Coming Soon]
+🔗 Hugging Face Deployment:
+
+https://huggingface.co/spaces/SaiMeghanath/mental-health-chatbot
 
 ---
 
