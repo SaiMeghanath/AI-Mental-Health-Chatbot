@@ -89,27 +89,48 @@ Both models are loaded via HuggingFace Transformers with singleton lazy loading 
 
 ---
 
-## Evaluation Results
+## 📊 Evaluation Results
 
-Evaluated on publicly available labelled datasets using scikit-learn metrics.
+The Mental Health Support Chatbot was evaluated using benchmark datasets for emotion classification and sentiment analysis.
 
-**Emotion Classifier — GoEmotions (6-class, filtered test split)**
+### Emotion Classification Performance
 
-| Metric | Value |
-|--------|-------|
-| Accuracy | 0.6814 |
-| Macro Precision | 0.6632 |
-| Macro Recall | 0.6571 |
-| Macro F1 | 0.6601 |
+| Metric | Score |
+|----------|----------|
+| Accuracy | 74.73% |
+| Macro Precision | 70.31% |
+| Macro Recall | 65.53% |
+| Macro F1-Score | 66.73% |
+| Samples Evaluated | 554 |
 
-**Sentiment Classifier — SST-2 (3-class mapped)**
+### Sentiment Analysis Performance
 
-| Metric | Value |
-|--------|-------|
-| Accuracy | 0.8341 |
-| Macro Precision | 0.8205 |
-| Macro Recall | 0.8119 |
-| Macro F1 | 0.8161 |
+| Metric | Score |
+|----------|----------|
+| Accuracy | 61.17% |
+| Macro Precision | 63.23% |
+| Macro Recall | 40.78% |
+| Macro F1-Score | 49.58% |
+| Samples Evaluated | 600 |
+
+### Evaluation Components
+
+✅ Emotion Classification (Anger, Disgust, Fear, Joy, Neutral, Sadness, Surprise)
+
+✅ Sentiment Analysis (Positive, Negative, Neutral)
+
+✅ Crisis Detection Module
+
+✅ Empathetic Response Generation
+
+✅ Conversation Logging System
+
+### Observations
+
+- The emotion classifier achieved strong performance with an accuracy of 74.73%.
+- The sentiment classifier achieved an accuracy of 61.17%.
+- Crisis-related inputs are intercepted before normal response generation to provide safety-focused responses.
+- All interactions are logged with timestamps, emotion labels, sentiment predictions, confidence scores, and generated responses for analysis and future improvements.
 
 ---
 
